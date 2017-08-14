@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@color/white">
+
+	<FrameLayout
+		android:id="@+id/fl_product_sort_num"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1">
+
+		<TextView
+			android:id="@+id/tv_product_sort_num_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:drawableEnd="@drawable/product_down_black_icon"
+			android:drawablePadding="10dp"
+			android:text="@string/sales_volume"
+			android:textSize="14sp"
+			android:textColor="@color/product_sort_txt_selector"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/fl_product_sort_price"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1">
+
+		<TextView
+			android:id="@+id/tv_product_sort_price_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:drawableEnd="@drawable/product_down_black_icon"
+			android:drawablePadding="10dp"
+			android:text="@string/price"
+			android:textSize="14sp"
+			android:textColor="@color/product_sort_txt_selector"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/fl_product_sort_time"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:layout_weight="1">
+
+		<TextView
+			android:id="@+id/tv_product_sort_time_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:drawableEnd="@drawable/product_down_black_icon"
+			android:drawablePadding="10dp"
+			android:text="@string/consumer_detail_time"
+			android:textSize="14sp"
+			android:textColor="@color/product_sort_txt_selector"/>
+	</FrameLayout>
+
+</LinearLayout>

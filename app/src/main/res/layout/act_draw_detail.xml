@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.bigkoo.convenientbanner.ConvenientBanner
+					android:id="@+id/cb_draw_detail_banner"
+					android:layout_width="match_parent"
+					android:layout_height="300dp"/>
+
+				<ImageView
+					android:id="@+id/iv_draw_detail_back"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:scaleType="center"
+					android:src="@drawable/detail_back_icon"/>
+			</FrameLayout>
+
+			<TextView
+				android:id="@+id/tv_draw_detail_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingStart="12dp"
+				android:paddingEnd="12dp"
+				android:textSize="15sp"
+				android:textColor="@color/middle_gray"/>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10dp"
+				android:paddingStart="12dp"
+				android:paddingEnd="12dp">
+
+				<TextView
+					android:id="@+id/tv_draw_detail_price"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="@color/bindindo_text"/>
+
+				<TextView
+					android:id="@+id/tv_draw_detail_num"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:textSize="14sp"
+					android:textColor="@color/bindindo_text"/>
+			</FrameLayout>
+
+			<View style="@style/person_split_margin_left_right"/>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:paddingStart="12dp"
+				android:paddingEnd="12dp">
+
+				<TextView
+					android:id="@+id/tv_draw_detail_all_num"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textSize="14sp"
+					android:textColor="@color/bindindo_text"/>
+
+				<TextView
+					android:id="@+id/tv_draw_detail_no"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end|center_vertical"
+					android:visibility="gone"
+					android:textSize="14sp"
+					android:textColor="@color/bindindo_text"/>
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<WebView
+					android:id="@+id/wv_draw_detail_content"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+			</FrameLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<TextView
+		android:id="@+id/tv_draw_detail_start"
+		android:text="@string/now_draw"
+		style="@style/SingleGreenBtn"/>
+</LinearLayout>

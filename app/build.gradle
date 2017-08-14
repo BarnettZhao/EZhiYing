@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    defaultConfig {
+        applicationId "cn.antke.ezy"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 9
+        versionName "1.0.8"
+        ndk {
+            //选择要添加的对应cpu类型的.so库,还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+        }
+        //应用版本是versionName，开发时Bugly上显示的有_dev的后缀
+        manifestPlaceholders = [
+                JPUSH_PKGNAME   : applicationId,
+                JPUSH_APPKEY    : "8d8e0b04cf5c00d3580fddc6", //JPush上注册的包名对应的appkey.
+//				JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                APP_VERSION_NAME: versionName + "_dev"
+        ]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "ezy888"
+            keyAlias "ezy"
+            keyPassword "ezy888"
+        }
+    }
+
+    buildTypes {
+        release {
+            //签名
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    productFlavors {
+        "EYZ"{}
+    }
+
+    productFlavors.all {
+            //替换Manifest文件中的CHANNEL_NAME
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_NAME: name, JPUSH_CHANNEL: name]
+    }
+    // rename apk
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//				def fileName = outputFile.name
+                def fileName = outputFile.name.replace(".apk","-${defaultConfig.versionName}.apk")
+
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':commonlib')
+    compile project(':custormpulltorefresh')
+    compile "com.android.support:appcompat-v7:$rootProject.supportVersion"
+    compile "com.android.support:cardview-v7:$rootProject.supportVersion"
+    compile "com.android.support:support-v4:$rootProject.supportVersion"
+    compile "com.android.support:design:$rootProject.supportVersion"
+    //zxing
+    compile 'com.google.zxing:core:latest.release'
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.5'
+    compile 'cn.jiguang.sdk:jcore:1.1.2'
+    //图表库
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    //banner
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //汉字转拼音
+    compile 'com.belerweb:pinyin4j:2.5.0'
+}

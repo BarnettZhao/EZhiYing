@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\ProjectAndroid\\EZhiYing\\commonlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3255,
+                    "endColumn": 46,
+                    "endOffset": 3297
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\commonlib\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 1,
+                        "startOffset": 14,
+                        "endColumn": 43,
+                        "endOffset": 56
+                    }
+                }
+            }
+        ]
+    }
+]

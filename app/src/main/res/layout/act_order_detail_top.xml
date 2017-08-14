@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/order_detail_outtime"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/primary_color"
+		android:textSize="12sp"
+		android:gravity="center"/>
+
+	<RelativeLayout
+		android:id="@+id/order_detail_top_rl"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="15dp">
+
+		<TextView
+			android:id="@+id/order_detail_consignee"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="收货人：历程"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/order_detail_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="40dp"
+			android:layout_toRightOf="@+id/order_detail_consignee"
+			android:text="13001122321"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/order_detail_address"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/order_detail_consignee"
+			android:layout_marginTop="7dp"
+			android:text="收货地址：北京市北京朝阳区东三环北路中青大厦302"/>
+	</RelativeLayout>
+
+	<View
+		android:id="@+id/order_detail_top_view"
+		style="@style/person_split_match"
+		android:layout_marginTop="10dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="30dp">
+
+			<TextView
+				android:id="@+id/order_detail_store"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:text="北京阿迪王"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/order_detail_status"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center"
+				android:text="未支付"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

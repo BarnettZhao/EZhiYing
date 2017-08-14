@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-mdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-mdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-mdpi\\default_ptr_flip.png"
+    }
+]

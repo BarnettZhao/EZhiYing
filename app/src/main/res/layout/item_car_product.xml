@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:paddingEnd="0dp"
+              android:paddingStart="12dp">
+
+	<CheckBox
+		android:id="@+id/cb_car_product_check"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/sdv_car_product_pic"
+		android:layout_width="100dp"
+		android:layout_height="100dp"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/rl_car_product_info"
+			android:layout_width="match_parent"
+			android:layout_height="110dp"
+			android:paddingBottom="15dp"
+			android:paddingEnd="12dp"
+			android:paddingStart="12dp"
+			android:paddingTop="15dp">
+
+			<TextView
+				android:id="@+id/tv_car_product_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				android:ellipsize="end"
+				android:textColor="@color/middle_gray"
+				android:textSize="15sp"/>
+
+			<TextView
+				android:id="@+id/tv_car_product_desc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/tv_car_product_name"
+				android:paddingTop="8dp"
+				android:maxLines="1"
+				android:ellipsize="end"
+				android:textColor="@color/bindindo_text"
+				android:textSize="13sp"/>
+
+			<TextView
+				android:id="@+id/tv_car_product_condition"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/tv_car_product_desc"
+				android:paddingTop="12dp"
+				android:textColor="@color/bindindo_text"
+				android:textSize="13sp"/>
+
+			<TextView
+				android:id="@+id/tv_car_product_num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentEnd="true"
+				android:textColor="@color/bindindo_text"
+				android:textSize="13sp"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/rl_car_product_edit"
+			android:layout_width="match_parent"
+			android:layout_height="110dp"
+			android:paddingBottom="15dp"
+			android:paddingEnd="12dp"
+			android:paddingStart="12dp"
+			android:paddingTop="15dp"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/tv_car_product_count"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingStart="0dp"
+				android:paddingEnd="10dp"
+				android:textSize="14sp"
+				android:textColor="@color/middle_gray"/>
+
+			<TextView
+				android:id="@+id/tv_car_product_change"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/tv_car_product_count"
+				android:paddingStart="0dp"
+				android:paddingEnd="10dp"
+				android:paddingTop="15dp"
+				android:textSize="14sp"
+				android:textColor="@color/middle_gray"/>
+
+			<ImageView
+				android:id="@+id/iv_car_product_edit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:padding="10dp"
+				android:layout_alignBottom="@id/tv_car_product_change"
+				android:src="@drawable/shopcar_edit_img"/>
+		</RelativeLayout>
+	</FrameLayout>
+</LinearLayout>

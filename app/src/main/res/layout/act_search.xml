@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:paddingStart="12dp"
+		android:paddingEnd="0dp"
+		android:background="@color/primary_color">
+
+		<EditText
+			android:id="@+id/et_search_input"
+			android:layout_width="0dp"
+			android:layout_height="28dp"
+			android:layout_weight="1"
+			android:hint="@string/search_input_hint"
+			android:textColorHint="@color/edit_introduce_color"
+			android:drawableStart="@drawable/search_search_icon"
+			android:drawablePadding="5dp"
+			android:paddingStart="7dp"
+			android:paddingEnd="0dp"
+			android:textSize="14sp"
+			android:textColor="@color/primary_color_text"
+			android:inputType="text"
+			android:imeOptions="actionSearch"
+			android:background="@drawable/search_input_bg"/>
+
+		<TextView
+			android:id="@+id/tv_search_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:gravity="center"
+			android:text="取消"
+			android:textSize="14sp"
+			android:textColor="@color/white"/>
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="33dp"
+		android:paddingStart="15dp"
+		android:paddingEnd="0dp"
+		android:gravity="center_vertical"
+		android:background="@color/common_bg"
+		android:text="热门搜索"
+		android:textColor="@color/middle_gray"
+		android:textSize="14sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:paddingBottom="15dp"
+		android:paddingStart="0dp"
+		android:paddingEnd="12dp">
+
+		<cn.antke.ezy.widget.flowlayout.FlowTagLayout
+			android:id="@+id/ftl_search_hot_search"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:paddingEnd="0dp"
+			android:paddingStart="2dp"/>
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="33dp"
+		android:paddingStart="15dp"
+		android:paddingEnd="0dp"
+		android:gravity="center_vertical"
+		android:background="@color/common_bg"
+		android:text="历史搜索"
+		android:textColor="@color/middle_gray"
+		android:textSize="14sp"/>
+
+	<ListView
+		android:id="@+id/lv_search_history"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:divider="@null"
+		android:background="@color/white"/>
+
+	<LinearLayout
+		android:id="@+id/ll_search_clean_history"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:visibility="gone"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableStart="@drawable/history_delete_icon"
+			android:drawablePadding="5dp"
+			android:gravity="center"
+			android:text="@string/search_clear_history"
+			android:textColor="@color/edit_introduce_color"/>
+	</LinearLayout>
+</LinearLayout>

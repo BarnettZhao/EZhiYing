@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+	<com.common.widget.FootLoadingListView
+		android:id="@+id/share_member_list"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:scrollbars="none"
+		android:layout_weight="1"/>
+
+	<cn.antke.ezy.widget.SideBar
+		android:id="@+id/share_member_sidebar"
+		android:layout_width="40dp"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:paddingEnd="10dp"
+		android:paddingStart="0dp"
+		android:background="@color/white"
+		android:textColor="@color/middle_gray"
+		android:textSize="15sp"/>
+</LinearLayout>

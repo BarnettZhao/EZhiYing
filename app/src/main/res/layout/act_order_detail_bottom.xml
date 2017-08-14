@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:id="@+id/order_detail_goods_price"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:gravity="end"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp"
+		android:paddingTop="6dp"
+		android:textColor="@color/middle_gray"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/order_detail_freight"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:gravity="end"
+		android:paddingBottom="8dp"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp"
+		android:paddingTop="5dp"
+		android:textColor="@color/middle_gray"
+		android:textSize="12sp"/>
+
+	<View style="@style/person_split_match"/>
+
+	<View
+		android:id="@+id/order_detail_refund_view"
+		style="@style/person_split_match"
+		android:layout_marginTop="10dp"/>
+
+	<LinearLayout
+		android:id="@+id/order_detail_refund_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/person_order_refund_reason"
+				android:textColor="@color/middle_gray"/>
+
+			<TextView
+				android:id="@+id/order_detail_refund_reason"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"/>
+
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/person_order_refund_explain"
+				android:textColor="@color/middle_gray"/>
+
+			<TextView
+				android:id="@+id/order_detail_refund_explain"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="10dp"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingBottom="15dp"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp"
+		android:paddingTop="15dp">
+
+		<TextView
+			android:id="@+id/order_detail_text1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/order_detail_text2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/order_detail_text3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+</LinearLayout>

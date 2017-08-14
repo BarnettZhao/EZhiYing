@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flaganim"
+	android:oneshot="false">
+	<item  android:drawable="@drawable/loading_more_1" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_2" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_3" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_4" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_5" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_6" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_7" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_8" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_9" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_10" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_11" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_12" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_13" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_14" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_15" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_16" android:duration="100"/>
+	<item  android:drawable="@drawable/loading_more_17" android:duration="100"/>
+</animation-list>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@color/primary_color">
+
+		<TextView
+			android:id="@+id/tv_select_language"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:paddingStart="15dp"
+			android:paddingEnd="15dp"
+			android:drawableEnd="@drawable/home_select_down_icon"
+			android:drawablePadding="4dp"
+			android:textColor="@color/white"
+			android:textSize="14sp"/>
+
+		<FrameLayout
+			android:id="@+id/fl_home_search"
+			android:layout_width="0dp"
+			android:layout_height="28dp"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/home_title_translucent_bg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:drawableStart="@drawable/home_search_icon"
+				android:drawablePadding="6dp"
+				android:text="@string/search"
+				android:textColor="@color/white"
+				android:textSize="14sp"/>
+		</FrameLayout>
+
+		<ImageView
+			android:id="@+id/iv_home_scan"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingStart="15dp"
+			android:paddingEnd="15dp"
+			android:visibility="visible"
+			android:src="@drawable/shopcar_icon"/>
+	</LinearLayout>
+
+	<com.common.widget.RefreshRecyclerView
+		android:id="@+id/rrv_home_list"
+		android:background="@color/common_bg"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>

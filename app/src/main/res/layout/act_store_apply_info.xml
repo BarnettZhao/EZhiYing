@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_name"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/store_applyinfo_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <LinearLayout
+                android:id="@+id/store_applyinfo_category_ll"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_category"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/store_applyinfo_category"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/list_more"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/person_split_match"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_recommend_phone"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/store_applyinfo_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_address_position"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/store_applyinfo_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_address_detail"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/store_applyinfo_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <LinearLayout
+                android:id="@+id/ll_applyinfo_business_license"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_business_license"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_business_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/other_license_pic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_business_license_pic"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_applyinfo_organization_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_organization_code"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_organization_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/other_license_pic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_organization_code_pic"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_applyinfo_account_permit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_account_permit"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_account_permit"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/other_license_pic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_account_permit_pic"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_applyinfo_tax_registration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_tax_registration"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_tax_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/other_license_pic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_tax_registration_pic"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_user_idcard"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_idcard_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/bindinfo_idcard_front" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/bindinfo_identify_front"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_idcard_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/bindinfo_idcard_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/bindinfo_identify_back"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_applyinfo_hygiene"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_health_permit"
+                    android:textColor="@color/middle_gray" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_applyinfo_hygiene"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/other_license_pic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_health_permit_pic"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/store_applyinfo_commit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/primary_color"
+            android:gravity="center"
+            android:text="@string/commit_apply"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

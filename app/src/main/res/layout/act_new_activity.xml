@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/sdv_activity_pic"
+		android:layout_width="200dp"
+		android:layout_height="300dp"
+		android:layout_centerHorizontal="true"/>
+
+	<ImageView
+		android:id="@+id/iv_activity_close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end"
+		android:layout_alignEnd="@id/sdv_activity_pic"
+		android:layout_alignTop="@id/sdv_activity_pic"
+		android:src="@drawable/activity_close_icon"/>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\b9ca1201fb2de977ca90357149fa9f0abc5ef4ee\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\13cde4870b7dd108f51c4fc6f51cc35cf1708e3e\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\7eefb83742a5c692d53025a39cee09cc26584f08\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\1bc9e9bed18450078e9a5be1e2ab3b91c54633dc\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\b74cde533a6edcc8d5afd3ec7093b6a0c3102225\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\5bb0e2a4fb84e11216d14717f2efe6ee7e246368\output\res"/></dataSet><dataSet config="output$Generated" generated="true"><source path="C:\Users\zww\.android\build-cache\b31b534256ed3705522162540ce4f7c8dbc27629\output\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res"/><source path="D:\ProjectAndroid\EZhiYing\commonlib\build\generated\res\rs\release"/><source path="D:\ProjectAndroid\EZhiYing\commonlib\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="D:\ProjectAndroid\EZhiYing\commonlib\src\release\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\b9ca1201fb2de977ca90357149fa9f0abc5ef4ee\output\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\13cde4870b7dd108f51c4fc6f51cc35cf1708e3e\output\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\7eefb83742a5c692d53025a39cee09cc26584f08\output\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\1bc9e9bed18450078e9a5be1e2ab3b91c54633dc\output\res"><file path="C:\Users\zww\.android\build-cache\1bc9e9bed18450078e9a5be1e2ab3b91c54633dc\output\res\values\values.xml" qualifiers=""><declare-styleable name="SimpleDraweeView"><attr format="string" name="actualImageUri"/></declare-styleable><declare-styleable name="GenericDraweeHierarchy"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/><attr format="dimension" name="roundingBorderPadding"/></declare-styleable></file></source></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\b74cde533a6edcc8d5afd3ec7093b6a0c3102225\output\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\5bb0e2a4fb84e11216d14717f2efe6ee7e246368\output\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Users\zww\.android\build-cache\b31b534256ed3705522162540ce4f7c8dbc27629\output\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res"><file name="load_operate" path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res\anim\load_operate.xml" qualifiers="" type="anim"/><file name="loading" path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res\drawable-xhdpi\loading.png" qualifiers="xhdpi-v4" type="drawable"/><file name="f_progress_dialog" path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res\layout\f_progress_dialog.xml" qualifiers="" type="layout"/><file path="D:\ProjectAndroid\EZhiYing\commonlib\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">commonLib</string></file></source><source path="D:\ProjectAndroid\EZhiYing\commonlib\build\generated\res\rs\release"/><source path="D:\ProjectAndroid\EZhiYing\commonlib\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\ProjectAndroid\EZhiYing\commonlib\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="SimpleDraweeView"><attr format="string" name="actualImageUri"/></declare-styleable><declare-styleable name="GenericDraweeHierarchy"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+    </attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/><attr format="dimension" name="roundingBorderPadding"/></declare-styleable></configuration></mergedItems></merger>

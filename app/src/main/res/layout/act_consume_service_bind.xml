@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/person_consumer_service_bind_code"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<EditText
+				android:id="@+id/consumer_service_bind_code"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="0dp"
+				android:layout_marginStart="20dp"
+				android:layout_weight="1"
+				android:background="@null"
+				android:ellipsize="end"
+				android:gravity="center_vertical|end"
+				android:maxLines="1"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/personinfo_realname"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_bind_realname"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/register_recommend_phone"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_bind_phone"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/consumer_service_bind_btn"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/primary_color"
+		android:gravity="center"
+		android:text="@string/consumer_service_bind"
+		android:textColor="@color/white"
+		android:textSize="16sp"/>
+</RelativeLayout>

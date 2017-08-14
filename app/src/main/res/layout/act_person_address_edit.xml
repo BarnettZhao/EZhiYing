@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp">
+
+		<cn.antke.ezy.widget.ClearEditText
+			android:id="@+id/edit_address_user"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:hint="@string/person_address_consignee"
+			android:textColor="@color/primary_color_text"
+			android:textColorHint="@color/text_introduce_color"
+			android:textSize="14sp"/>
+
+		<View style="@style/person_split_match"/>
+
+		<cn.antke.ezy.widget.ClearEditText
+			android:id="@+id/edit_address_phone"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:background="@null"
+			android:maxLength="11"
+			android:gravity="center_vertical"
+			android:hint="@string/register_recommend_phone"
+			android:inputType="number"
+			android:textColor="@color/primary_color_text"
+			android:textColorHint="@color/text_introduce_color"
+			android:textSize="14sp"/>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:id="@+id/edit_address_select_area"
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/person_address_position"
+				android:textColor="@color/primary_color_text"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/edit_address_area"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:drawablePadding="10dp"
+				android:drawableRight="@drawable/list_more"
+				android:gravity="center_vertical"
+				android:textColor="@color/primary_color_text"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<cn.antke.ezy.widget.ClearEditText
+			android:id="@+id/edit_address_detail"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:hint="@string/person_address_detail"
+			android:textColor="@color/primary_color_text"
+			android:textColorHint="@color/text_introduce_color"
+			android:textSize="14sp"/>
+
+		<View style="@style/person_split_match"/>
+
+		<TextView
+			android:id="@+id/edit_address_default"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:gravity="center_vertical"
+			android:text="@string/person_address_default"
+			android:textColor="@color/primary_color_text"
+			android:drawableLeft="@drawable/list_check_normal"
+			android:drawablePadding="5dp"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:id="@+id/edit_address_save"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/ic_button"
+		android:enabled="false"
+		android:gravity="center"
+		android:text="@string/save"
+		android:textColor="@color/white"
+		android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/consumer_service_info_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<LinearLayout
+			android:id="@+id/consumer_service_choose_area"
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/consumer_choose_area"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_area"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginEnd="0dp"
+				android:layout_marginStart="20dp"
+				android:layout_weight="1"
+				android:drawableEnd="@drawable/list_more"
+				android:drawablePadding="5dp"
+				android:gravity="center_vertical|end"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/register_usernumber_text"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_user_code"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/personinfo_realname"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_realname"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/register_recommend_phone"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_phone"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/amount_of_money"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_money"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/consumer_useing_integral"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_integral"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/consumer_transductive_member"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/consumer_service_member"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center_vertical"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/consumer_service_pay_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/consumer_service_info_ll"
+		android:layout_marginTop="10dp"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/consumer_service_wx"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:drawableEnd="@drawable/language_area_selected"
+			android:gravity="center_vertical"
+			android:text="@string/charge_pay_by_wx"
+			android:textColor="@color/middle_gray"/>
+
+		<View style="@style/person_split_match"/>
+
+		<TextView
+			android:id="@+id/consumer_service_zfb"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:drawableEnd="@drawable/language_area_normal"
+			android:gravity="center_vertical"
+			android:text="@string/charge_pay_by_zfb"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/consumer_service_pay"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/primary_color"
+		android:gravity="center"
+		android:text="@string/charge_pay"
+		android:textColor="@color/white"
+		android:textSize="16sp"/>
+</RelativeLayout>

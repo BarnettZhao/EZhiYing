@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<cn.antke.ezy.widget.ScrollWebView
+		android:id="@+id/store_protocal_webview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+
+	<TextView
+		android:id="@+id/store_protocal_agree"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_marginStart="-4dp"
+		android:layout_marginEnd="-4dp"
+		android:text="@string/agree"
+		android:background="@drawable/ic_button"
+		android:enabled="false"
+		android:textColor="@color/white"
+		android:gravity="center"/>
+
+</LinearLayout>

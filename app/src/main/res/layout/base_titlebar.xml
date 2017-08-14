@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/base_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/primary_color"
+                android:gravity="center_vertical">
+
+	<ImageView
+		android:id="@+id/left_button"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:src="@drawable/ic_back"/>
+
+	<TextView
+		android:id="@+id/left_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="15dp"
+		android:text="@string/cancel1"
+		android:textColor="@color/white"
+		android:textSize="14dp"
+		android:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/toolbar_left_title"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="50dp"
+		android:layout_toRightOf="@id/left_button"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="@color/white"
+		android:textSize="18sp"/>
+
+	<TextView
+		android:id="@+id/toolbar_title"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="55dp"
+		android:layout_marginRight="55dp"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="@color/white"
+		android:textSize="18sp"
+		android:visibility="gone"/>
+
+	<ImageView
+		android:id="@+id/right_button"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:src="@drawable/qrcode_share"
+		android:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/rigth_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="15dp"
+		android:textColor="@color/white"
+		android:textSize="14dp"
+		android:visibility="gone"/>
+
+	<View
+		android:id="@+id/title_line"
+		style="@style/person_split_match"
+		android:layout_alignParentBottom="true"/>
+</RelativeLayout>

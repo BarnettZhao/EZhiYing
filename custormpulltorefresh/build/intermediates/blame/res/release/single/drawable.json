@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable\\ptr_more_loadanimation.xml",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable\\ptr_more_loadanimation.xml"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable\\ptr_loadanimation.xml",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable\\ptr_loadanimation.xml"
+    }
+]

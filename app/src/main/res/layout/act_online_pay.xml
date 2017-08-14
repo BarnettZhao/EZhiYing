@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@color/white"
+		android:paddingStart="12dp"
+		android:paddingEnd="12dp">
+
+		<TextView
+			android:id="@+id/tv_online_wxpay"
+			android:text="@string/charge_pay_by_wx"
+
+			style="@style/RadioBtn"/>
+
+		<TextView
+			android:id="@+id/tv_online_alipay"
+			android:text="@string/charge_pay_by_zfb"
+			style="@style/RadioBtn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_gravity="bottom"
+		android:background="@color/white">
+
+		<TextView
+			android:id="@+id/tv_online_postage"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:gravity="center_vertical"
+			android:textSize="15sp"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/tv_online_pay"
+			android:text="@string/charge_pay"
+			style="@style/GreenBtn"/>
+	</LinearLayout>
+</FrameLayout>

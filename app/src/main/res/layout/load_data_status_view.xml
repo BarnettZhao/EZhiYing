@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/loading_layout"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="76dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/loading_img_empty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_empty"/>
+
+		<TextView
+			android:id="@+id/loading_txt_empty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/no_data_now"
+			android:textColor="@color/text_introduce_color"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/loading_img_anim"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/loading"/>
+
+		<TextView
+			android:id="@+id/loading_btn_card_empty"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:background="@drawable/ic_tran_button"
+			android:gravity="center"
+			android:padding="10dp"
+			android:textColor="@color/primary_color"
+			android:visibility="gone"/>
+
+		<ImageView
+			android:id="@+id/loading_img_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/ic_refresh"/>
+
+		<TextView
+			android:id="@+id/loading_txt_retry"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:text="页面加载失败，请点击屏幕刷新！"/>
+	</LinearLayout>
+
+</FrameLayout>

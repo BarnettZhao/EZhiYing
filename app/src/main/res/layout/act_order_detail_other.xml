@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="30dp">
+
+			<TextView
+				android:id="@+id/order_detail_other_type"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:text="充值"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/order_detail_other_status"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:gravity="center"
+				android:text="未支付"
+				android:textColor="@color/middle_gray"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp">
+
+			<TextView
+				android:id="@+id/order_detail_other_desc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:text="可用积分充值"
+				android:textColor="@color/middle_gray"
+				android:textSize="15sp"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp">
+
+				<TextView
+					android:id="@+id/order_detail_other_integral"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="可用积分 10000"
+					android:textColor="@color/text_introduce_color"
+					android:textSize="12sp"/>
+
+				<TextView
+					android:id="@+id/order_detail_other_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:text="周期 3天"
+					android:textColor="@color/text_introduce_color"
+					android:textSize="12sp"/>
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/order_detail_other_multiple"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:text="倍数 3倍"
+				android:textColor="@color/text_introduce_color"
+				android:textSize="12sp"/>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginTop="10dp"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp"
+		android:paddingTop="15dp">
+
+		<TextView
+			android:id="@+id/order_detail_other_text1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="订单编号：123165615"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/order_detail_other_text2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:text="订单编号：123165615"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/order_detail_other_text3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:text="订单编号：123165615"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<RelativeLayout
+		android:id="@+id/order_detail_other_bottom_rl"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:background="@color/white"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/order_detail_other_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="合计：500"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/order_detail_other_btn"
+			android:layout_width="100dp"
+			android:layout_height="35dp"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/ic_button"
+			android:gravity="center"
+			android:text="退款"
+			android:textColor="@color/white"
+			android:textSize="14sp"/>
+	</RelativeLayout>
+</LinearLayout>

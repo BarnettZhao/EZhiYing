@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="84dp"
+		android:orientation="horizontal"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/store_mystore_icon"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_gravity="center_vertical"
+			fresco:failureImage="@drawable/default_avatar_bg"
+			fresco:placeholderImage="@drawable/default_avatar_bg"
+			fresco:roundAsCircle="true"/>
+
+		<TextView
+			android:id="@+id/store_mystore_name"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginStart="15dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/middle_gray"
+			android:textSize="15sp"/>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/store_store_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawablePadding="17dp"
+			android:drawableTop="@drawable/store_store_info"
+			android:gravity="center"
+			android:text="@string/store_store_info"/>
+
+		<TextView
+			android:id="@+id/store_order_manager"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="38dp"
+			android:layout_toEndOf="@+id/store_store_info"
+			android:drawablePadding="17dp"
+			android:drawableTop="@drawable/store_order_manager"
+			android:gravity="center"
+			android:text="@string/store_order_manager"/>
+
+		<TextView
+			android:id="@+id/store_good_manager"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/store_store_info"
+			android:layout_marginTop="33dp"
+			android:drawablePadding="17dp"
+			android:drawableTop="@drawable/store_good_manager"
+			android:visibility="gone"
+			android:gravity="center"
+			android:text="@string/store_goods_manager"/>
+
+		<TextView
+			android:id="@+id/store_add_new_good"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/store_order_manager"
+			android:layout_marginStart="38dp"
+			android:layout_marginTop="33dp"
+			android:visibility="gone"
+			android:layout_toEndOf="@+id/store_good_manager"
+			android:drawablePadding="17dp"
+			android:drawableTop="@drawable/store_add_new_good"
+			android:gravity="center"
+			android:text="@string/store_add_new_good"/>
+	</RelativeLayout>
+</LinearLayout>

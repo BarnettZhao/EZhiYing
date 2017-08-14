@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="375dp">
+
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/store_edit_pic"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				fresco:actualImageScaleType="fitCenter"/>
+
+			<ImageView
+				android:id="@+id/store_edit_add"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:src="@drawable/store_detail_add"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical"
+			android:paddingEnd="12dp"
+			android:paddingStart="12dp">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="44dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:text="@string/store_edit_good_name"
+					android:textColor="@color/middle_gray"
+					android:textSize="14sp"/>
+
+				<EditText
+					android:id="@+id/store_edit_good_name"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="0dp"
+					android:layout_marginStart="20dp"
+					android:layout_weight="1"
+					android:background="@null"
+					android:ellipsize="end"
+					android:gravity="center_vertical|end"
+					android:maxLines="1"
+					android:textColor="@color/middle_gray"
+					android:textSize="14sp"/>
+			</LinearLayout>
+
+			<View style="@style/person_split_match"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="44dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:text="@string/store_edit_good_describe"
+					android:textColor="@color/middle_gray"
+					android:textSize="14sp"/>
+
+				<EditText
+					android:id="@+id/store_edit_good_describe"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="0dp"
+					android:layout_marginStart="20dp"
+					android:layout_weight="1"
+					android:background="@null"
+					android:ellipsize="end"
+					android:gravity="center_vertical|end"
+					android:maxLines="2"
+					android:textColor="@color/middle_gray"
+					android:textSize="14sp"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="@color/white"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:paddingEnd="12dp"
+				android:paddingStart="12dp">
+
+				<LinearLayout
+					android:id="@+id/store_edit_category_ll"
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/main_tab_category"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<TextView
+						android:id="@+id/store_edit_category"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:drawableEnd="@drawable/list_more"
+						android:drawablePadding="5dp"
+						android:gravity="center_vertical|end"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+
+				<View style="@style/person_split_match"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_integral"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<EditText
+						android:id="@+id/store_edit_integral"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:background="@null"
+						android:ellipsize="end"
+						android:gravity="center_vertical|end"
+						android:inputType="number"
+						android:maxLines="1"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_integral"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+
+				<View style="@style/person_split_match"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_stock"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<EditText
+						android:id="@+id/store_edit_stock"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:background="@null"
+						android:ellipsize="end"
+						android:gravity="center_vertical|end"
+						android:inputType="number"
+						android:maxLines="1"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+
+				<View style="@style/person_split_match"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_postage"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<EditText
+						android:id="@+id/store_edit_postage"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:background="@null"
+						android:ellipsize="end"
+						android:gravity="center_vertical|end"
+						android:inputType="number"
+						android:maxLines="1"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<TextView
+						android:id="@+id/store_edit_postage_unit"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_marginStart="40dp"
+						android:drawableEnd="@drawable/list_more"
+						android:drawablePadding="5dp"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_integral"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+
+				<View style="@style/person_split_match"/>
+
+				<LinearLayout
+					android:id="@+id/store_edit_specification_ll"
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_specification"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<TextView
+						android:id="@+id/store_edit_specification"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:drawableEnd="@drawable/list_more"
+						android:drawablePadding="5dp"
+						android:gravity="center_vertical|end"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+
+				<View style="@style/person_split_match"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="44dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:text="@string/store_good_limited"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+
+					<EditText
+						android:id="@+id/store_edit_limited"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="0dp"
+						android:layout_marginStart="20dp"
+						android:layout_weight="1"
+						android:background="@null"
+						android:ellipsize="end"
+						android:gravity="center_vertical|end"
+						android:inputType="number"
+						android:maxLines="1"
+						android:textColor="@color/middle_gray"
+						android:textSize="14sp"/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:paddingEnd="12dp"
+				android:paddingStart="12dp"
+				android:src="@drawable/store_edit_delete_unuseable"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/store_edit_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@color/common_bg"/>
+
+		<LinearLayout
+			android:id="@+id/store_edit_add_new_type"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:layout_marginTop="10dp"
+			android:background="@color/white"
+			android:gravity="end"
+			android:orientation="horizontal"
+			android:paddingEnd="12dp"
+			android:paddingStart="0dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:drawablePadding="8dp"
+				android:drawableStart="@drawable/store_edit_add"
+				android:gravity="center_vertical"
+				android:text="@string/store_edit_add_good_type"
+				android:textColor="@color/middle_gray"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/store_edit_good_detail"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:layout_marginTop="10dp"
+			android:background="@color/white"
+			android:drawableEnd="@drawable/list_more"
+			android:gravity="center_vertical"
+			android:paddingEnd="12dp"
+			android:paddingStart="12dp"
+			android:text="@string/store_good_detail"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/store_edit_on_or_off"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:layout_marginTop="10dp"
+			android:background="@color/primary_color"
+			android:gravity="center"
+			android:text="@string/store_edit_on_or_off"
+			android:textColor="@color/white"/>
+	</LinearLayout>
+</ScrollView>

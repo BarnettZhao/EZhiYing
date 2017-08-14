@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingEnd="12dp"
+              android:paddingStart="12dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/item_order_other_type"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/item_order_other_status"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:gravity="center"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+	</RelativeLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:id="@+id/item_order_other_desc"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/middle_gray"
+		android:textSize="15sp"/>
+
+	<TextView
+		android:id="@+id/item_order_other_integral"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:textColor="@color/text_introduce_color"
+		android:textSize="12sp"/>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:id="@+id/item_order_other_price"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_marginTop="12dp"
+		android:gravity="end|center_vertical"
+		android:textColor="@color/text_introduce_color"
+		android:textSize="12sp"/>
+
+	<View style="@style/person_split_match"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp">
+
+		<TextView
+			android:id="@+id/item_order_other_btn2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/ic_tran_button"/>
+
+		<TextView
+			android:id="@+id/item_order_other_btn1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/ic_tran_button"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <RelativeLayout
+            android:id="@+id/personinfo_avatar_rl"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/personinfo_avatar"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/personinfo_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                fresco:failureImage="@drawable/default_avatar_bg"
+                fresco:placeholderImage="@drawable/default_avatar_bg"
+                fresco:roundAsCircle="true" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/register_usernumber_text"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personinfo_usernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/personinfo_realname"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personinfo_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/register_recommend_phone"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personinfo_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/person_split_match"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/personinfo_nickname"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/personinfo_nickname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/personinfo_age"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/personinfo_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|end"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/personinfo_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:text="@string/personinfo_my_qrcode"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+
+        <View style="@style/person_split_match" />
+
+        <RelativeLayout
+            android:id="@+id/personinfo_constellation_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personinfo_constellation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/list_more"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:id="@+id/personinfo_receiver_address_ll"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/personinfo_receiver_address"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/personinfo_receiver_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/list_more"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personinfo_finished"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_color"
+        android:gravity="center"
+        android:text="@string/finished"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

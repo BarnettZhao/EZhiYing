@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--二维码-->
+	<color name="transparent">#00000000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="border_gray">#e0e0e0</color>
+	<color name="distance_spinner_bg">#E5E5E5</color>
+	<color name="distance_spinner_right_bg">#F3F3F3</color>
+	<color name="spinner_list_item_selector">#028be6</color>
+	<!--dialogplus-->
+	<color name="black_overlay">#60000000</color>
+
+	<color name="dark_grey">#2f333b</color>
+	<!--主色调-->
+	<color name="primary_color_text">#212121</color>
+	<!--app主色调 绿色-->
+	<color name="primary_color">#06a544</color>
+	<color name="vice_color">#80D4CC</color>
+
+	<!--编辑框提示语字体颜色-->
+	<color name="edit_introduce_color">#CCCCCC</color>
+	<color name="text_introduce_color">#999999</color>
+
+	<color name="spilt_line">#EEEEEE</color>
+	<color name="price_color">#FF4200</color>
+	<color name="ic_button_unable">#E8E8E8</color>
+	<color name="dialog_button_text">#0066ff</color>
+	<color name="bindindo_text">#666666</color>
+	<color name="red_dot">#d41439</color>
+
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#06a544</color>
+	<color name="middle_gray">#333333</color>
+	<color name="light_grey">#95DCD5</color>
+
+	<color name="common_bg">#F2F2F2</color>
+	<color name="gray_board_bg">#808080</color>
+</resources>

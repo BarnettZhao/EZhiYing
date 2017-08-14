@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\loading.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-xhdpi\\loading.png"
+    },
+    {
+        "merged": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\drawable-xhdpi\\indicator_arrow.png"
+    }
+]

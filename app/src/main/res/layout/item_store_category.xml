@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+	android:paddingTop="10dp"
+	android:paddingBottom="10dp"
+	android:paddingStart="6dp"
+	android:paddingEnd="6dp">
+
+	<TextView
+		android:id="@+id/tv_store_category"
+		android:layout_width="match_parent"
+		android:layout_height="25dp"
+		android:gravity="center"
+		android:background="@drawable/store_category_bg_selector"
+		android:textColor="@color/store_category_text_selector"
+		android:textSize="13sp"
+		android:text="分类"/>
+</LinearLayout>

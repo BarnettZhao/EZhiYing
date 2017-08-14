@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:paddingTop="20dp"
+		android:paddingBottom="20dp"
+		android:background="@color/white">
+
+		<TextView
+			android:id="@+id/tv_pay_result"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@drawable/pay_success_icon"
+			android:drawablePadding="10dp"
+			android:text="@string/pay_success"
+			android:textSize="16sp"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/tv_pay_result_integral"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="12dp"
+			android:textSize="20sp"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="10dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:paddingTop="14dp"
+		android:paddingBottom="14dp"
+		android:paddingStart="12dp"
+		android:paddingEnd="12dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pay_way"
+			android:textSize="15sp"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/tv_pay_result_way"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:textSize="15sp"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:paddingTop="45dp">
+
+		<TextView
+			android:id="@+id/tv_pay_result_lbtn"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:gravity="center"
+			android:background="@drawable/btn_black_border"
+			android:text="@string/person_order_detail"
+			android:textSize="14sp"
+			android:textColor="@color/middle_gray"/>
+
+		<Space
+			android:layout_width="30dp"
+			android:layout_height="wrap_content"/>
+
+		<TextView
+			android:id="@+id/tv_pay_result_rbtn"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:gravity="center"
+			android:background="@drawable/btn_black_border"
+			android:text="@string/home_page"
+			android:textSize="14sp"
+			android:textColor="@color/middle_gray"/>
+	</LinearLayout>
+</LinearLayout>

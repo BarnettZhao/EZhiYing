@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_area_current"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:gravity="center_vertical"
+			android:background="@color/common_bg"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:textSize="15sp"
+			android:textColor="@color/black"/>
+
+		<ListView
+			android:id="@+id/lv_area_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:dividerHeight="1px"
+			android:divider="@color/common_bg"
+			android:scrollbars="none"
+			android:background="@color/white"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_language_current"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:gravity="center_vertical"
+			android:background="@color/common_bg"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:textSize="15sp"
+			android:textColor="@color/black"/>
+
+		<ListView
+			android:id="@+id/lv_language_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:dividerHeight="1px"
+			android:divider="@color/common_bg"
+			android:scrollbars="none"
+			android:background="@color/white"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_area_confirm"
+		android:text="确认"
+		style="@style/SingleGreenBtn"/>
+</LinearLayout>

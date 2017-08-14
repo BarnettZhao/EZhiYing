@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/good_friend_phone"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:drawableEnd="@drawable/list_more"
+			android:drawablePadding="10dp"
+			android:drawableStart="@drawable/good_friend_phone"
+			android:gravity="center_vertical"
+			android:text="@string/good_friend_phone"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<View style="@style/person_split_match"/>
+
+		<TextView
+			android:id="@+id/good_friend_wx"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:drawableEnd="@drawable/list_more"
+			android:drawablePadding="10dp"
+			android:drawableStart="@drawable/good_friend_wx"
+			android:gravity="center_vertical"
+			android:text="@string/good_friend_wx"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<include layout="@layout/act_share_member"/>
+</LinearLayout>

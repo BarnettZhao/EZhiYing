@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+	android:gravity="center_vertical"
+	android:paddingStart="12dp"
+	android:paddingEnd="12dp"
+	android:background="@color/white">
+
+	<TextView
+		android:id="@+id/tv_record_consume_num"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:textColor="@color/middle_gray"/>
+
+	<TextView
+		android:id="@+id/tv_record_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="7dp"
+		android:paddingBottom="7dp"
+		android:layout_below="@id/tv_record_consume_num"
+		android:textSize="12sp"
+		android:textColor="@color/text_introduce_color"/>
+
+	<TextView
+		android:id="@+id/tv_record_buy_num"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:textSize="15sp"
+		android:textColor="@color/middle_gray"/>
+
+	<TextView
+		android:id="@+id/tv_record_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="7dp"
+		android:paddingBottom="7dp"
+		android:layout_alignParentEnd="true"
+		android:layout_below="@id/tv_record_buy_num"
+		android:text="买入"
+		android:textSize="12sp"
+		android:textColor="@color/text_introduce_color"/>
+
+	<View
+		style="@style/person_split_match"
+		android:layout_below="@id/tv_record_date"/>
+</RelativeLayout>

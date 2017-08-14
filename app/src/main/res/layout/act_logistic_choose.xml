@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/store_logistic_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="@string/cancel"
+            android:textColor="@color/middle_gray" />
+
+        <TextView
+            android:id="@+id/store_logistic_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="@string/button_ok"
+            android:textColor="@color/middle_gray" />
+    </LinearLayout>
+
+    <View style="@style/person_split_match" />
+
+    <LinearLayout
+        android:id="@+id/personinfo_receiver_address_ll"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/store_order_logistic_company"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/store_logistic_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/list_more"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/person_split_match" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/store_order_logistic_no"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/store_logistic_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="@string/store_order_logistic_no_input"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

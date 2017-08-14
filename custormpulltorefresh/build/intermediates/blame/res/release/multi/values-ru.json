@@ -1,0 +1,140 @@
+[
+    {
+        "outputFile": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ru\\values-ru.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 52,
+                    "endOffset": 103
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 1,
+                        "startOffset": 670,
+                        "endColumn": 49,
+                        "endOffset": 718
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 101,
+                    "endOffset": 205
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 352,
+                        "endColumn": 98,
+                        "endOffset": 449
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 210,
+                    "endColumn": 113,
+                    "endOffset": 319
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 558,
+                        "endColumn": 110,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 324,
+                    "endColumn": 107,
+                    "endOffset": 427
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 1,
+                        "startOffset": 452,
+                        "endColumn": 104,
+                        "endOffset": 555
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 432,
+                    "endColumn": 60,
+                    "endOffset": 488
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 1,
+                        "startOffset": 54,
+                        "endColumn": 57,
+                        "endOffset": 110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 493,
+                    "endColumn": 66,
+                    "endOffset": 555
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 1,
+                        "startOffset": 176,
+                        "endColumn": 63,
+                        "endOffset": 238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 560,
+                    "endColumn": 64,
+                    "endOffset": 620
+                },
+                "from": {
+                    "file": "D:\\ProjectAndroid\\EZhiYing\\custormpulltorefresh\\src\\main\\res\\values-ru\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 1,
+                        "startOffset": 113,
+                        "endColumn": 61,
+                        "endOffset": 173
+                    }
+                }
+            }
+        ]
+    }
+]

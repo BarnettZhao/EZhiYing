@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/store_detail_pic"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            fresco:actualImageScaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/store_detail_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/store_detail_add" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/store_name"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/store_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/contact_name"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/store_detail_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/register_recommend_phone"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/store_detail_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/person_address_position"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/store_detail_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/store_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/register_recommend_phone"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/store_detail_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/store_detail_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/primary_color"
+        android:gravity="center"
+        android:text="@string/button_ok"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

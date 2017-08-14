@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingEnd="12dp"
+    android:paddingStart="12dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/item_integral_give_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000000000000积分"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_integral_give_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lsdkjajfdkjsflsajflsajflsjflkjafjafsl"
+                android:textColor="@color/text_introduce_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_integral_give_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="lsdkjajfdkjsflsajflsajflsjflkjafj汉字汉字汉字啊汉字汉字汉字汉字啊汉字汉字汉字汉字啊汉字汉字汉字汉字啊汉字汉字汉字汉字啊汉字afsl"
+                android:textColor="@color/text_introduce_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/spilt_line" />
+
+    <TextView
+        android:id="@+id/item_integral_give_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/ic_tran_button"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/integral_give"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="#0000"
+              android:orientation="vertical"
+              android:paddingBottom="10sp"
+              android:paddingLeft="10sp"
+              android:paddingRight="10sp"
+              android:paddingTop="10sp">
+	<!--     <android.support.v4.widget.ContentLoadingProgressBar
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/> -->
+	<!--<ProgressBar-->
+	<!--android:layout_width="wrap_content"  -->
+	<!--android:layout_height="wrap_content"  -->
+	<!--android:layout_gravity="center_horizontal"  -->
+	<!--android:minWidth="48dp"-->
+	<!--android:maxWidth="48dp"-->
+	<!--android:minHeight="48dp"-->
+	<!--android:maxHeight="48dp"/>-->
+	<!--<com.common.widget.ProgressImageView-->
+		<!--android:id="@+id/progress_loading"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:background="@drawable/progress_loadanimation"/>-->
+	<ImageView
+		android:id="@+id/progress_loading"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/loading"/>
+</LinearLayout>  
+

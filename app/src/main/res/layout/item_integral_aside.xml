@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingEnd="12dp"
+              android:paddingStart="12dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp">
+
+		<TextView
+			android:id="@+id/integral_aside_order_number"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:textColor="@color/middle_gray"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/integral_aside_consume_return"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:gravity="center_vertical"
+			android:textColor="@color/middle_gray"
+			android:textSize="15sp"/>
+	</RelativeLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="20dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="15dp"
+		android:background="@drawable/integral_aside"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:paddingBottom="12dp">
+
+		<TextView
+			android:id="@+id/integral_aside_confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/integral_confirm"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/integral_aside_return"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="@string/integral_return"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/integral_aside_confirm_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/integral_aside_confirm"
+			android:layout_marginTop="5dp"
+			android:textColor="@color/text_introduce_color"
+			android:textSize="10sp"/>
+
+		<TextView
+			android:id="@+id/integral_aside_return_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_below="@+id/integral_aside_confirm"
+			android:layout_marginTop="5dp"
+			android:textColor="@color/text_introduce_color"
+			android:textSize="10sp"/>
+	</RelativeLayout>
+</LinearLayout>

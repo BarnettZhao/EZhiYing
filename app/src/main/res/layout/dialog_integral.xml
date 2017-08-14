@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:gravity="center"
+		android:text="@string/dialog_integral_sale"
+		android:textColor="@color/middle_gray"
+		android:textSize="17sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:orientation="horizontal"
+		android:paddingEnd="20dp"
+		android:paddingStart="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text="@string/dialog_integral_sale_integral"
+			android:textColor="@color/middle_gray"
+			android:textSize="13sp"/>
+
+		<EditText
+			android:id="@+id/dialog_integral_integral"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="4dp"
+			android:background="@drawable/btn_black_border"
+			android:gravity="center_vertical"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:orientation="horizontal"
+		android:paddingEnd="20dp"
+		android:paddingStart="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:text="@string/dialog_integral_sale_max"
+			android:textColor="@color/middle_gray"
+			android:textSize="13sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_marginTop="12dp"
+		android:orientation="horizontal"
+		android:paddingEnd="20dp"
+		android:paddingStart="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text="@string/dialog_integral_sale_price"
+			android:textColor="@color/middle_gray"
+			android:textSize="13sp"/>
+
+		<EditText
+			android:id="@+id/dialog_integral_money"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="4dp"
+			android:background="@drawable/btn_black_border"
+			android:gravity="center_vertical"/>
+	</LinearLayout>
+
+	<View
+		style="@style/person_split_margin_left_right"
+		android:layout_marginTop="25dp"/>
+
+	<TextView
+		android:id="@+id/dialog_integral_btn"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:gravity="center"
+		android:text="@string/dialog_integral_sale"
+		android:textColor="@color/dialog_button_text"
+		android:textSize="17sp"/>
+</LinearLayout>

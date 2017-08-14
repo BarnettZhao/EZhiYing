@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/cb_product_detail_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <TextView
+                    android:id="@+id/tv_product_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_product_detail_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/bindindo_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_product_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_product_detail_postage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bindindo_text"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_product_detail_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bindindo_text"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_product_detail_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textColor="@color/bindindo_text"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/wv_product_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/iv_product_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/detail_back_icon" />
+
+            <ImageView
+                android:id="@+id/iv_product_detail_car"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/shop_car_icon" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View style="@style/person_split_match" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/iv_product_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/store_icon"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg" />
+
+        <TextView
+            android:id="@+id/tv_product_add_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/add_shop_car"
+            android:textColor="@color/middle_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_product_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/primary_color"
+            android:gravity="center"
+            android:text="@string/buy_now"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

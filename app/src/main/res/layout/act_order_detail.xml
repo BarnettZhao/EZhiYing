@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<ListView
+		android:id="@+id/order_detail_list"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:divider="@null"/>
+
+	<View style="@style/person_split_match"
+		android:layout_below="@+id/order_detail_list"
+		android:layout_marginTop="10dp"/>
+
+	<RelativeLayout
+		android:id="@+id/order_detail_bottom_rl"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/white"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/order_detail_price"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textColor="@color/middle_gray"/>
+
+		<TextView
+			android:id="@+id/order_detail_btn2"
+			android:layout_width="85dp"
+			android:layout_height="30dp"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:visibility="gone"
+			android:background="@drawable/ic_button"
+			android:gravity="center"
+			android:textColor="@color/white"/>
+
+		<TextView
+			android:id="@+id/order_detail_btn1"
+			android:layout_width="85dp"
+			android:layout_height="30dp"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="10dp"
+			android:visibility="gone"
+			android:layout_toLeftOf="@+id/order_detail_btn2"
+			android:background="@drawable/btn_black_border"
+			android:gravity="center"
+			android:textColor="@color/middle_gray"/>
+	</RelativeLayout>
+</LinearLayout>

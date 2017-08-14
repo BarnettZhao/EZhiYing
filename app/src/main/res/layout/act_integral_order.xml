@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	<LinearLayout
+		android:id="@+id/integral_account_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/primary_color"
+		android:orientation="vertical"
+		android:paddingEnd="12dp"
+		android:paddingStart="12dp">
+
+		<TextView
+			android:id="@+id/integral_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:textColor="@color/white"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:id="@+id/integral_account"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="50dp"
+			android:layout_marginTop="25dp"
+			android:textColor="@color/white"
+			android:textSize="45sp"/>
+	</LinearLayout>
+	<com.common.widget.FootLoadingListView
+		android:id="@+id/integral_list"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+</LinearLayout>

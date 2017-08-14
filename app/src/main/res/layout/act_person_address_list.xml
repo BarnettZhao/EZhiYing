@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<include layout="@layout/load_data_status_view"/>
+
+		<com.common.widget.FootLoadingListView
+			android:id="@+id/address_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="@null"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/address_add_new"
+		android:layout_width="match_parent"
+		android:layout_height="49dp"
+		android:layout_gravity="bottom"
+		android:background="@color/primary_color"
+		android:gravity="center"
+		android:text="@string/person_address_add"
+		android:textColor="@color/white"/>
+</LinearLayout>

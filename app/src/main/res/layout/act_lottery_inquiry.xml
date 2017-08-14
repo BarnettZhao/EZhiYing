@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/lottery_inquiry_periods"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="3"
+			android:gravity="center"
+			android:text="@string/lottery_inquiry_time"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:gravity="center"
+			android:text="@string/store_good_integral"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:gravity="center"
+			android:text="@string/lottery_inquiry_result"
+			android:textColor="@color/middle_gray"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<com.common.widget.FootLoadingListView
+		android:id="@+id/lottery_inquiry_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</LinearLayout>

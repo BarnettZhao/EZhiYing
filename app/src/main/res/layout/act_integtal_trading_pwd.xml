@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="12dp"
+    android:paddingStart="12dp">
+
+    <TextView
+        android:id="@+id/integral_pwd_set"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:drawableEnd="@drawable/list_more"
+        android:gravity="center_vertical"
+        android:text="@string/integral_trading_pwd_set"
+        android:textColor="@color/middle_gray"
+        android:textSize="14sp" />
+
+    <View style="@style/person_split_match" />
+
+    <TextView
+        android:id="@+id/login_pwd_change"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:drawableEnd="@drawable/list_more"
+        android:gravity="center_vertical"
+        android:text="@string/login_change_pwd"
+        android:textColor="@color/middle_gray"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="160dp">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/sdv_store_pic"
+			android:layout_width="match_parent"
+			android:layout_height="160dp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:paddingStart="0dp"
+			android:paddingEnd="20dp">
+
+			<ImageView
+				android:id="@+id/iv_store_back"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:paddingStart="15dp"
+				android:paddingEnd="15dp"
+				android:src="@drawable/ic_back"/>
+
+			<EditText
+				android:id="@+id/et_store_search"
+				android:layout_width="match_parent"
+				android:layout_height="28dp"
+				android:background="@drawable/search_input_bg"
+				android:layout_marginStart="5dp"
+				android:layout_gravity="center_vertical"
+				android:drawableStart="@drawable/search_search_icon"
+				android:drawablePadding="5dp"
+				android:paddingStart="7dp"
+				android:paddingEnd="0dp"
+				android:inputType="text"
+				android:imeOptions="actionSearch"
+				android:hint="@string/search_input_hint"
+				android:textColorHint="@color/text_introduce_color"
+				android:textSize="14sp"
+				android:textColor="@color/primary_color_text"/>
+		</LinearLayout>
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/sdv_store_logo"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginStart="15dp"
+			android:layout_marginEnd="15dp"
+			android:layout_marginBottom="15dp"/>
+
+		<TextView
+			android:id="@+id/tv_store_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@id/sdv_store_logo"
+			android:layout_toEndOf="@id/sdv_store_logo"
+			android:paddingTop="10dp"
+			android:paddingBottom="8dp"
+			android:textSize="16sp"
+			android:textColor="@color/white"/>
+
+		<TextView
+			android:id="@+id/tv_store_merchant"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@id/sdv_store_logo"
+			android:layout_below="@id/tv_store_name"
+			android:textSize="16sp"
+			android:textColor="@color/white"/>
+	</RelativeLayout>
+
+	<include layout="@layout/act_product_list"/>
+</LinearLayout>

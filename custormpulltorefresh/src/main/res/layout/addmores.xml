@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fl_inner"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="48dp">
+
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left|center_vertical">
+
+		<ImageView
+			android:id="@+id/pull_to_refresh_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+
+		<ProgressBar
+			android:id="@+id/pull_to_refresh_progress"
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:indeterminate="true"
+			android:visibility="gone"/>
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/pull_to_refresh_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearance"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/pull_to_refresh_sub_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:visibility="gone"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/customLayout"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:gravity="center">
+
+		<com.common.widget.ProgressImageView
+			android:id="@+id/progress_footer"
+			android:layout_width="14dp"
+			android:layout_height="14dp"
+			android:background="@drawable/ptr_more_loadanimation"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:text="@string/pull_loading_more"
+			android:textColor="#9099a6"
+			android:textSize="12sp"/>
+	</LinearLayout>
+</FrameLayout>

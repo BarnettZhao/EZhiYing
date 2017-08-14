@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color">
+
+            <TextView
+                android:id="@+id/person_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="15dp"
+                android:text="@string/quit"
+                android:textColor="@color/white" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/person_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                fresco:failureImage="@drawable/default_avatar_bg"
+                fresco:placeholderImage="@drawable/default_avatar_bg"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/person_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_avatar"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_username"
+                android:orientation="horizontal"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp">
+
+                <TextView
+                    android:id="@+id/person_useable_integral_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/person_useable_integral2"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"></TextView>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/person_good_friend_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/person_good_friend"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/person_good_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_all_order"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/person_my_order"
+                android:textColor="@color/middle_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/list_more"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/person_all_order"
+                android:textColor="@color/middle_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="12dp">
+
+            <FrameLayout
+                android:id="@+id/person_order_paying"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/order_paying"
+                    android:gravity="center"
+                    android:text="@string/person_order_paying"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="13sp" />
+
+                <include layout="@layout/red_dot" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/person_order_deliving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/order_deliving"
+                    android:gravity="center"
+                    android:text="@string/person_order_deliving"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="13sp" />
+
+                <include layout="@layout/red_dot" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/person_order_delivred"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/order_deliverd"
+                    android:gravity="center"
+                    android:text="@string/person_order_delived"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="13sp" />
+
+                <include layout="@layout/red_dot" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/person_order_finished"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/order_finished"
+                    android:gravity="center"
+                    android:text="@string/person_order_finished"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="13sp" />
+
+                <include layout="@layout/red_dot" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/person_order_refund"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/order_refund"
+                    android:gravity="center"
+                    android:text="@string/person_order_refund"
+                    android:textColor="@color/middle_gray"
+                    android:textSize="13sp" />
+
+                <include layout="@layout/red_dot" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <View
+            style="@style/person_split_match"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/person_personal_store"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_personal_store"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_voucher_center"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_voucher_center"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            style="@style/person_split_match"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/person_my_message"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/list_more"
+                android:gravity="center_vertical"
+                android:text="@string/person_my_message"
+                android:textColor="@color/primary_color_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/person_my_message_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_circle_red"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_share_member"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_share_member"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            style="@style/person_split_match"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/person_consumer_service_bind"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_consumer_service_bind"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            style="@style/person_split_match"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/person_consumer_service"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_consumer_service"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_transfer_integral"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_transfer_integral"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_transaction_password"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_pwd_set"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_bond_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_bond_exchange"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <View style="@style/person_split_match"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/person_lottery_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_lottery_inquiry"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View
+            style="@style/person_split_match"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/person_notice"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/list_more"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:text="@string/person_notice"
+            android:textColor="@color/primary_color_text"
+            android:textSize="14sp" />
+
+        <View
+            style="@style/person_split_match"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</ScrollView>

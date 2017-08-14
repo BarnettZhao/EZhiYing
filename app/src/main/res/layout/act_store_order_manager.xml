@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<RadioGroup
+		android:id="@+id/store_order_radiogroup"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:background="@color/white"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<RadioButton
+			android:id="@+id/store_order_deliving"
+			style="@style/orderRadioButtonStyle"
+			android:text="@string/person_order_deliving"
+			android:checked="true"/>
+
+		<RadioButton
+			android:id="@+id/store_order_delived"
+			style="@style/orderRadioButtonStyle"
+			android:text="@string/person_order_delived"/>
+
+		<RadioButton
+			android:id="@+id/store_order_finished"
+			style="@style/orderRadioButtonStyle"
+			android:text="@string/person_order_finished"/>
+
+		<RadioButton
+			android:id="@+id/store_order_refund"
+			style="@style/orderRadioButtonStyle"
+			android:text="@string/person_order_refund"/>
+	</RadioGroup>
+
+	<View style="@style/person_split_match"/>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/store_order_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>
